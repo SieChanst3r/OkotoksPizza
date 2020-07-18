@@ -39,8 +39,17 @@ h1 + p {
 }
 
  #email:link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
     font-size: large;
-    color: orangered;
+    color: rgb(250, 248, 248);
+}
+
+#email:hover {
+    background-color: #111111;
 }
 
 body iframe a:visited {
@@ -60,5 +69,16 @@ body iframe a:visited {
     margin-left: auto;
     width: auto;
     padding: 10px;
-    
+    height: 5cm;    
 }
+
+.right {
+    float: right;
+    width: 500px;
+    border: 3px solid #0a0c08;
+    padding: 10px;
+  }
+
+  body {
+    background-color: rgb(236, 151, 119);
+  }
