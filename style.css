@@ -1,27 +1,36 @@
-ul {
-    list-style-type: none;
+
+
+#header {
+    grid-template-columns: 20% 40% 10% 10% 10% 10%;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-items: center ;
+    align-items: center;
+    position: absolute;
+}
+
+.nav-bar {
+    background-color: black;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+ }
+ .nav-bar:hover {
+     font-size: 15px;
+ }
+
+#content-start{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111111;
-  }
+}
 
+#pizza-video {
+    top: 25px;    
+    padding: 12vh;
+    left: 50%;
+}
 
 div h1 {
     color: rgb(150, 4, 4);
@@ -33,9 +42,9 @@ div > h4 {
 }
 
 h1 + p {
-    color: teal;
+    color: maroon;
     font-size: larger;
-
+   
 }
 
  #email:link {
@@ -43,13 +52,38 @@ h1 + p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
-    font-size: large;
+    font-size: medium;
     color: rgb(250, 248, 248);
 }
 
+#review:hover {
+    background-color: #111111;
+    font-size: large;
+}
+
+
+
 #email:hover {
     background-color: #111111;
+    font-size: large;
+}
+
+#tel:hover {
+    background-color: #111111;
+    font-size: large;
+}
+
+#tel:link {
+    color: white;
+}
+
+#review:link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: medium;
+    color: rgb(250, 248, 248);
 }
 
 body iframe a:visited {
@@ -74,11 +108,20 @@ body iframe a:visited {
 
 .right {
     float: right;
-    width: 500px;
-    border: 3px solid #0a0c08;
-    padding: 10px;
+    width: 400px;
+    border-bottom: 3px solid #0a0c08;
+    padding: 20px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: xx-large;
+    
+  }
+
+  .right:hover{
+    cursor: pointer;
+    font-size: 50px;
   }
 
   body {
-    background-color: rgb(236, 151, 119);
+    background-color: lightsalmon;
   }
