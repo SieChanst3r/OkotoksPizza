@@ -6,8 +6,36 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
+<br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <div id="content" class="content-items">
+    
+         <div><br><br><br><br><br><br>
 
-      css
+            <a href="#bottom">Go to the bottom</a>
+            <iframe id="pizza-video" width="678" height="381" src="https://www.youtube.com/embed/xbHbcmQIcAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <br><br><br>
+    <h2>Our Chef!</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_lyBVwbHpZe-WHB057_4Jz2VgjtL-NduZ3w&usqp=CAU" alt="a picture of a Chef holding pizza">
+    <br><br><br><br><br>
+    <h3> <em>Some special ingredients you may indulge:</em></h3>
+    <br><br>
+    <img src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pizza-Toppings.jpg" alt="Picture of a few ingredients and toppings for your pizza" width="500">
+    <br><br><br><br>
+    
+    <a id="bottom"></a>
+    </div>
+        <div class="right">
+            <div class="inner">
+              <span>Hello Pizza Lovers!</span>
+            </div>
+          </div>
+    
+
+
+
+CSS
 
       ul {
     list-style-type: none;
@@ -32,3 +60,10 @@
   li a:hover {
     background-color: #111111;
   }
+
+  #content-start{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+    margin: 0;
+    padding: 0;
+}
