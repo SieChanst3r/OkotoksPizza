@@ -1,7 +1,23 @@
+@keyframes specialAnimation {
+    0% {
+        width: 100%;
+        
+    }
+
+    50% {
+        width: 50%;
+       
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
-}
+  }
 
 #header {
     grid-template-columns: 20% 40% 10% 10% 10% 10%;
@@ -11,6 +27,26 @@
     justify-items: center ;
     align-items: center;
         
+}
+
+#tuesday-special {
+    display: grid;
+    align-items: center;    
+    justify-items: center;
+    width: 100%;
+    padding: 10px;   
+    min-height: 5vh; 
+}
+
+.special-items {
+    height: 10vh;
+}
+
+.special-items:hover {
+    animation-name: specialAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 #welcome-p {
@@ -35,7 +71,7 @@
      width: 90%;
      min-height: 70vh;
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(150px, 6fr));
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
      grid-template-rows: 50% 50%;
 
  }
@@ -44,7 +80,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
     min-height: 10vh;
-    width: 100%;
+    width: 98%;
+    justify-items: center;
+    align-items: center;
+    column-gap: 3vw;
 
 }
 
